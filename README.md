@@ -4,10 +4,6 @@ Wire a prebuilt **Graphify** codebase knowledge graph into **Cascade** (the Wind
 
 The whole trick: Graphify is a standalone CLI that produces a queryable `graph.json` and reads it back with `query` / `path` / `explain`. Claude Code's `/graphify` is just a thin skill over that CLI. This repo reproduces the same thing for Cascade — nothing here is Claude-Code-specific.
 
-> **Validated against Graphify `vX`.** _(TODO: set the exact version this was dogfooded against.)_ Where behavior differs across versions, the caveat is called out inline.
-
-> **License: not chosen yet.** See [`LICENSE`](LICENSE) — a placeholder until one is selected. _(TODO)_
-
 ---
 
 ## Quickstart
