@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "graphify": {
+      "command": "${env:REPO_ROOT}/.venv/bin/python",
+      "args": ["-m", "graphify.serve", "${env:REPO_ROOT}/graphify-out/graph.json"]
+    }
+  }
+}
