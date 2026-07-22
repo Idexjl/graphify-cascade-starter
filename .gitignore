@@ -1,0 +1,23 @@
+# --- Graphify ---
+# IMPORTANT: the committed graph is graphify-out/graph.json — the whole repo
+# depends on it being tracked, so DO NOT ignore graphify-out/ wholesale.
+# Only the disposable rebuild cache is ignored here.
+graphify-out/cache/
+
+# Human-facing Obsidian graph export — regenerated from scratch each run, so it
+# stays out of version control. (docs/memory/ is durable and IS committed.)
+docs/graph-vault/
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
