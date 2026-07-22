@@ -4,6 +4,8 @@ Wire a prebuilt **Graphify** codebase knowledge graph into **Cascade** (the Wind
 
 The whole trick: Graphify is a standalone CLI that produces a queryable `graph.json` and reads it back with `query` / `path` / `explain`. Claude Code's `/graphify` is just a thin skill over that CLI. This repo reproduces the same thing for Cascade — nothing here is Claude-Code-specific.
 
+> **Validated against Graphify `0.9.6`** (latest on PyPI as of July 2026). Where behavior differs across versions, the caveat is called out inline.
+
 ---
 
 ## Quickstart
@@ -16,10 +18,10 @@ Five steps to a working setup (details in the sections below):
 4. **Restart Cascade fully** (quitting the window isn't enough — MCP reloads only on a full restart).
 5. **Add the rules file** — [`.windsurf/rules/graphify.md`](.windsurf/rules/graphify.md) is already committed and Always On, so Cascade prefers the graph over raw search.
 
-Clone URL (replace `<your-org>`):
+Clone URL:
 
 ```bash
-git clone https://github.com/<your-org>/graphify-cascade-starter.git
+git clone https://github.com/Idexjl/graphify-cascade-starter.git
 ```
 
 ---
@@ -334,3 +336,9 @@ graphify export obsidian --dir docs/graph-vault      # render graph.json -> Obsi
 ```
 
 _(Native Windows: swap `.venv/bin/python` → `.venv\Scripts\python.exe`. Graphify subcommands are identical.)_
+
+---
+
+## License
+
+[MIT](LICENSE). Set the copyright holder in `LICENSE` before publishing.
